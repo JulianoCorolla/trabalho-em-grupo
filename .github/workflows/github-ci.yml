@@ -143,7 +143,7 @@ jobs:
           # Fazer fetch de todas as branches
           git fetch origin main dev
           
-          # Fazer checkout da dev
+          # Fazer checkout da deva
           git checkout dev
           
           # Fazer merge da main
@@ -166,7 +166,7 @@ jobs:
         run: |
           echo "Processando hotfix: v${{ env.version }}"
           
-          # Fazer merge da PR para main.
+          # Fazer merge da PR para main
           gh pr merge ${{ github.event.pull_request.number }} \
             --merge \
             --auto \
